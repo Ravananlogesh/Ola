@@ -1,0 +1,16 @@
+
+
+class Ola {
+    String name;
+    String cartype;
+    int amount;
+    Ola(String name,String cartype,int amount)
+    {
+        this.amount=amount;
+        this.cartype=cartype;
+        this.name=name;
+    }
+    static{
+        System.out.println("Welcome To Ola");
+    }
+}

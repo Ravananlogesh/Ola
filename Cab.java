@@ -1,0 +1,155 @@
+
+import java.util.Scanner;
+public class Cab {
+	static int otp=1234;
+	public static boolean verify()
+	{ Scanner s=new Scanner(System.in);
+	    System.out.println("***************************************************");
+		System.out.print("Enter the Phone Number :");
+	    String ph=s.next();
+		System.out.print("Enter the OTP :");
+		
+		int otp=s.nextInt();
+		System.out.println("***************************************************");
+		if (Cab.otp==otp)
+		{
+			System.out.println("your Phone Number is XXXXXX"+ph.substring(6,10));
+			System.out.println("Login Sucessfully\n ");
+		}
+		s.close();
+         return true;
+		
+	}
+    public static void main(String[] args){
+       Scanner sc=new Scanner(System.in);
+        Ola obj1=new Mini("Ola MINI","Two seater",10);
+        Ola obj2=new Prime("Ola PRIME","Two seater",20,"AC");
+        Ola obj3=new xuv("Ola XUV","Four seater",30,"AC");
+		boolean running =true;
+		System.out.println("***************************************************");
+        System.out.println("1) Car details");
+        System.out.println("2) Car Booking");
+        System.out.println("3) Exit");
+        System.out.println("***************************************************");
+        int choose=sc.nextInt();
+	
+        switch (choose) {
+            case 1:
+               {
+			    
+                while(running){
+				System.out.println("***************************************************");
+                System.out.println("1) Ola Mini");
+                System.out.println("2) Ola Prime");
+                System.out.println("3) Ola XUV");
+				System.out.println("4) Exit");
+				System.out.println("***************************************************");
+			
+                int option=sc.nextInt();
+                switch(option){
+					
+                case 1:
+                    {
+                        Mini m=(Mini)obj1;
+                        m.Details();
+                    }
+					break;
+                    case 2:
+                    {
+                        Prime p=(Prime)obj2;
+                        p.Details();
+                    }
+					break;
+                    case 3:
+                     {
+                        xuv x=(xuv)obj3;
+                        x.Details();
+                    }
+					break;
+					case 4:
+					{
+						System.out.println("Exiting..... ");
+						running=false;
+					}
+					break;
+					default:
+					{
+						System.out.println("Oops! Please Choose the Correct Option");
+					    running=true;
+					}
+				    break;
+				 }
+                 }
+			   }
+                break;
+               case 2:
+			    {   
+				    System.out.println("***************************************************");
+				    System.out.println("1) Ola Mini");
+                    System.out.println("2) Ola Prime");
+                    System.out.println("3) Ola XUV");
+				    System.out.println("4) Go To Menu  ");
+					System.out.println("***************************************************");
+					int bookno=sc.nextInt();
+					
+					switch(bookno)
+					{
+						
+						case 1:
+							{
+				           if (verify())
+				           {
+								if (obj1 instanceof Mini)
+								{ 
+									 Mini m=(Mini)obj1;	
+							         m.Miniprice();
+								}
+				            }
+							}
+							break;
+							case 2:
+						{
+				           if (verify())
+				           {
+								if (obj2 instanceof Prime)
+								{ 
+									 Prime p=(Prime)obj2;	
+							         p.Primeprice();
+								}
+				            }
+							}
+							break;
+							case 3:
+						  {
+				           if (verify())
+				           {
+								if (obj3 instanceof xuv)
+								{ 
+									 xuv x=(xuv)obj3;	
+							         x.xuvprice();
+								}
+				            }
+							}
+							break;
+							case 4:
+						{
+							System.out.println("Main Menu");
+						}
+							
+				   }
+						 
+			    }
+				break;
+				case 3:
+			{
+				System.exit(1);
+			}
+			break;
+            default:
+				System.out.println(" Please correct options");
+			    running=true;
+                break;
+        }
+        sc.close();	
+    }
+}
