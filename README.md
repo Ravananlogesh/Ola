@@ -23,3 +23,19 @@ To get a local copy up and running, follow these simple steps:
 1. Clone the repository:
    ```sh
    git clone https://github.com/Ravananlogesh/Ola.git
+## Usage
+
+To run the project, you can use the following commands:
+
+```bash
+javac Cab.java
+java Cab
+
+Author
+Logeshkumar
+Contact: logeshkumarmscit@email.com
+
+
+Replace "Logeshkumar" and "logeshkumarmcsit@email.com"
+
+
