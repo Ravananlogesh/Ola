@@ -3,6 +3,15 @@
 
 Welcome to my Java program repository! This project demonstrates a simple Java program that [briefly describe what your program does]. 
 
+# Cab Java Project
+
+This is a Java project for a Ola booking application.
+
+## Main Class
+
+The main class for this project is `Cab`. You can find the source code in `Cab.java`.
+
+
 ## Table of Contents
 
 - [Prerequisites](#prerequisites)
@@ -23,6 +32,15 @@ To get a local copy up and running, follow these simple steps:
 1. Clone the repository:
    ```sh
    git clone https://github.com/Ravananlogesh/Ola.git
+##Author
+ Logeshkumar
+ Contact: logeshkumarmscit@email.com
+
+
+
+Replace "Your Name" and "your@email.com" with your actual name and email address.
+
+
 ## Usage
 
 To run the project, you can use the following commands:
@@ -31,11 +49,5 @@ To run the project, you can use the following commands:
 javac Cab.java
 java Cab
 
-Author
-Logeshkumar
-Contact: logeshkumarmscit@email.com
-
-
-Replace "Logeshkumar" and "logeshkumarmcsit@email.com"
 
 
