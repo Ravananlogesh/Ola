@@ -38,7 +38,7 @@ To get a local copy up and running, follow these simple steps:
 
 
 
-Replace "Your Name" and "your@email.com" with your actual name and email address.
+
 
 
 ## Usage
